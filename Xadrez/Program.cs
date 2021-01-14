@@ -14,7 +14,7 @@ namespace Xadrez
 
                 PartidaDeXadrez partida = new PartidaDeXadrez();
 
-                while (!partida.terminanda)
+                while (!partida.terminada)
                 {
                     try
                     {
@@ -44,6 +44,9 @@ namespace Xadrez
                         Console.ReadLine();
                     }
                 }
+
+                Console.Clear();
+                Tela.imprimirPartida(partida);
 
             }
             catch (TabuleiroException e)
